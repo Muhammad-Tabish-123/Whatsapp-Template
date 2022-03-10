@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+ .example1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example1;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example1 {
+  0% {background-color: red; top: 0px; left: 0px;}
+  25% {background-color: yellow; top: 200px; left: 0px;}
+  50% {background-color: black; top: 200px; left: 200px;}
+  75% {background-color: green; top: 0px; left: 200px;}
+  100% {background-color: red; top: 0px; left: 0px;}
+}
+
+.example2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example2;
+  animation-duration: 10s;
+  animation-delay: -2s;
+  animation-iteration-count: 3;
+  animation-direction: reverse;
+}
+
+@keyframes example2 {
+  0% {background-color: red; top: 0px; left: 0px;}
+  25% {background-color: yellow; top: 200px; left: 0px;}
+  50% {background-color: black; top: 200px; left: 200px;}
+  75% {background-color: green; top: 0px; left: 200px;}
+  100% {background-color: red; top: 0px; left: 0px;}
+}
+
+.example3 {
+  /* width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 10s;
+  animation-delay: -2s;
+  animation-iteration-count: 3;
+  animation-direction: reverse; */
+  /* transition: width 2s, height 2s, transform 2s; */
+  width: 200px;
+  height: 50px;
+  
+}
+
+.example3[value]{
+    /* transition: width 10s, height 10s, transform 10s; */
+    position: relative;
+  animation-name: example3;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+  background-color: red;
+}
+
+
+
+/* .example3:hover{
+    width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+} */
+
+@keyframes example3 {
+  0% {background-color: red; top: 0px; left: 0px;}
+  25% {background-color: yellow; top: 200px; left: 0px;}
+  50% {background-color: black; top: 200px; left: 200px;}
+  75% {background-color: green; top: 0px; left: 200px;}
+  100% {background-color: red; top: 0px; left: 0px;}
+  0%{transform: rotate(0deg);}
+  30%{transform: rotate(180deg);}
+  
+  
+
+  /* from{transform: rotate(0deg);}
+  to{transform: rotate(180deg);} */
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation 1</h1>
+
+<div  class="example1"></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+<h1>CSS Animation 2</h1>
+
+<div class="example2"></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+<h1>CSS Animation 3</h1>
+<input class="example3" type="text" value="hello">
+
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>

@@ -1,0 +1,316 @@
+html, body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+table{
+    margin: 0px;
+    padding: 0px;
+    /* float: right;
+    margin: 0px;
+    padding: 0px; */
+    height: 100vh;
+    width: 100%;
+    
+    
+}
+table,tr,td{
+    border: 1px solid transparent;
+    border-collapse: collapse;
+    background-color: white;
+    border-spacing: 0px;
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+body{
+    background-color: red;
+}
+td:nth-child(1){
+    width: 409px;
+    /* background-color: white ; */
+}
+tr:nth-child(1){
+    height: 70px;
+
+}
+#Profileimg{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    float: left;
+    margin-left:20px ;
+}
+tr:nth-child(1) p{
+    float: left;
+    font-family: 'Calibri'; 
+    font-size: 12px;
+     margin-left: 20px; 
+    color: grey; 
+    font-weight: bold;
+}
+tr:nth-child(1) i{
+    margin-top: 5px;
+    font-size: 25px;
+    color: gray;
+    margin-left: 40px;
+}
+#Status{
+    margin-left: 140px;
+}
+#dots{
+    margin-bottom: 20px;
+    
+}
+
+tr:nth-child(1) td:nth-child(2){
+   
+    
+    margin: 0px;
+    padding: 0px;
+    /* overflow-y: hidden; */
+    /* object-fit: fill; */
+    /* text-align: center; */
+}
+
+#Defaultimg{
+    /* left: 0;
+    top: 0; */
+    float: left;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* object-fit: fill; */
+    /* overflow-y: hidden; */
+   
+    /* display: none; */
+    object-fit: cover;
+    /* border: 10px solid red; */
+    /* overflow: hidden; */
+    
+}
+
+#Iframe{
+    /* display: block; */
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+tr:nth-child(2){
+    height: 90px;
+    cursor: pointer;
+}
+
+tr:nth-child(2) td:nth-child(1){
+   
+    /* background-image: linear-gradient(0deg, aqua, blue); */
+    background-color: #52bdeb;
+    
+}
+#Icon-background{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    text-align: center;
+    margin-left: 20PX;
+    float: left;
+    
+}
+
+#notification_icon{
+ margin-top: 10px;
+ color: #52bdeb;
+ font-size: 120%;
+}
+#Notification-text{
+    margin-left: 100px;
+    text-decoration: none;
+    color: black;
+}
+#Notification-text a{
+   
+    text-decoration: none;
+    color: black;
+}
+
+tr:nth-child(3){
+    height: 40px;
+    
+    
+}
+
+
+
+tr:nth-child(3) input{
+    height: 80%;
+    background-color: rgb(240, 240, 240);
+    width: 93%;
+    margin-left: 3%;
+    border-radius: 10px ;
+    color: gray;
+    font-size: 15xpx;
+    border-style: none;
+    font-family: FontAwesome;
+    outline: none;
+}
+
+
+#contact-link-size{
+    text-decoration: none;
+}
+
+#contack-background{
+    width: 100%;
+    height: 20%;
+    /* background-color: blue; */
+   text-decoration: none;
+   margin: 0px;
+   padding: 0px;
+   /* border: 1px solid greenyellow; */
+   
+}
+
+#contact-link-size img{
+   border-radius: 100%;
+   float: left;
+   height: 70px;
+   width: 70px;
+   margin-left: 20px;
+    margin-top: 6px;
+}
+
+
+#contact-name{
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    float: left;
+    color: black;
+    
+}
+
+#recent-message{
+    /* float: left; */
+    /* margin-right: 150px; */
+    margin-left: 110px;
+    margin-top: 40px;
+    color: gray;
+}
+
+
+#contact-btn-size{
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    outline: none;
+    border-style: none;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    
+}
+
+#contact-btn-size img{
+    border-radius: 100%;
+    float: left;
+    height: 70px;
+    width: 70px;
+    margin-left: 20px;
+     margin-top: 6px;
+ }
+
+ #recent-message-btn{
+     /* float: left; */
+    margin-right: 250px;
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    
+    padding: 0px;
+    color: gray;
+ }
+
+
+ /* scroll............................................ */
+ #overflow{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+ /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  
+/* icon linethrough editing............................................ */
+
+/* responsive............................................ */
+
+@media only screen and (max-width: 620px) {
+    
+    td:nth-child(1){
+      width: 100%;
+
+   }
+    td:nth-child(2){
+      display: none;
+   }
+
+   
+   tr:nth-child(1) i{
+   
+    margin-left: 80px;
+}
+#Status{
+   
+    margin-left: 140px;
+}
+#dots{
+    
+    margin-bottom: 20px;
+    
+}
+
+
+
+/* td:nth-child(1){
+  
+    display: none;
+
+ }
+  td:nth-child(2){
+    width: 100%;
+ } */
+
+ 
+ 
+
+
+}
+
+
+
+
+ 
