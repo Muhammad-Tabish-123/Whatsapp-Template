@@ -1,14 +1,40 @@
 function Iframe(){
     document.getElementById('Defaultimg').style.display="none";
     document.getElementById('Iframe').style.display="block";
+
+
     
 }
 function cls(){
-    document.getElementById('contact-name').style.display="none";
-//    document.getElementsByTagName('table').style.display="none";
+    // document.getElementById('contact-name').style.display="none";
+    if (window.innerWidth < 960) {
+        alert('Less than 960');
+        document.querySelector('td:nth-child(1)').style.display="none";
+        const array_of_rows=document.getElementsByTagName("tr");
+        console.log(array_of_rows);
+        
+        for (let i = 1; i < 4; i++) {
+            array_of_rows[i].style.display="none";
+          }
+          document.querySelector('td:nth-child(2)').style.display="block";
+        //   document.querySelector('td:nth-child(2)').style.width=window.innerWidth;
+          document.querySelector('td:nth-child(2)').style.height="100%";
+          
+
+          
+          
+        
+       
+    }
+    else {
+    
+        alert('More than 960');
+    }
+
 }
 
-
+// document.querySelector('td:nth-child(2)').style.display="block";
+// document.querySelector('td:nth-child(2)').style.display="100%";
 
 //select nth child method
 // document.querySelector('td:nth-child(1)').style.display="none";
@@ -34,6 +60,7 @@ function cls(){
 //Bilal array method test
 // document.getElementById('Defaultimg').style.height="100%";
 // document.getElementById('Defaultimg').style.width="100%";
+// document.querySelector('td:nth-child(2)').style.width="100%";
 // document.querySelector('td:nth-child(1)').style.display="none";
 // const array_of_rows=document.getElementsByTagName("tr");
 // console.log(array_of_rows);
@@ -44,7 +71,7 @@ function cls(){
 
 
 
-//screen width with f condition
+//screen width with if condition
 // if (screen.width < 960) {
 //     alert('Less than 960');
 // }
@@ -57,10 +84,20 @@ function cls(){
 //     if (screen.width < 960) {
 //         alert('Less than 960');
 //     }
-//     else {
+    // else {
     
-//         alert('More than 960');
-//     }
+    //     alert('More than 960');
+    // }
 // }
 
-//check if working
+//window width with if condition
+// if (window.innerWidth < 960) {
+//     alert('Less than 960');
+// }
+// else {
+
+//     alert('More than 960');
+// }
+
+
+
