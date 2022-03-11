@@ -18,8 +18,8 @@ function cls(){
           }
           document.querySelector('td:nth-child(2)').style.display="block";
         //   document.querySelector('td:nth-child(2)').style.width=window.innerWidth;
-          document.querySelector('td:nth-child(2)').style.height="100%";
-          
+          document.querySelector('td:nth-child(2)').style.height="99%";
+       
 
           
           
