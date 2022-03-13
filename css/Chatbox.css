@@ -17,6 +17,14 @@ html,body{
     font-family:  Georgia, Times, 'Times New Roman', serif;
 }
 
+body{
+    background-image: url(../Images/ChatBackground.png);
+}
+
+
+
+
+/*---------------------Header here----------------------------------*/
 #header{
     height: 11%;
     background-color: gray;
@@ -52,42 +60,85 @@ html,body{
     margin-top: 45px;
 }
 
+
+
+
+/*---------------------Body here----------------------------------*/
 #body{
     height: 80%;
     /* background-color: gray; */
     overflow: scroll;
     overflow-x: hidden;
+    
 }
 
+
+
+
+/*---------------------Footer Here----------------------------------*/
 #footer{
     height: 9%;
     background-color: gray;
     align-items: center;
+    
 }
 
-#emojis{
+#emojis-icon{
+    /* margin-left: 3%;
+    margin-top: 14px;
+    font-size: 30px;
+    float: left; */
+}
+
+#emoji-button{
+
+    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* border-style: none; */
+    border-radius: 100%;
+
     margin-left: 3%;
-    margin-top: 14px;
+    margin-top: 5px;
     font-size: 30px;
     float: left;
+       
 }
 
-#file-attachment{
-    margin-left: 2%;
+#file-attachment-icon{
+    /* margin-left: 2%;
     margin-top: 14px;
     font-size: 30px;
-    float: left;
+    float: left; */
 }
+
+#file-attachment-button{
+    
+    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* border-style: none; */
+    border-radius: 100%;
+     
+     float: left;
+
+     margin-left: 2%;
+     margin-top: 5px;
+     font-size: 30px;
+}
+
+
 
  #footer input{
     height: 60%;
     background-color: rgb(240, 240, 240);
-    width: 80%;
+    width: 70%;
     /* margin-left: 10%;
     margin-top: 0.5%; */
 
-    margin-left: 3%;
+    margin-left: 1.5%;
     margin-top: 10px;
+       padding: 0px 0px 0px 30px; 
 
     border-radius: 10px ;
     color: gray;
@@ -95,32 +146,155 @@ html,body{
     border-style: none;
     font-family: FontAwesome;
     outline: none;
-
+     font-size: 20px;
+     color: black;
     float: left;
+    
+  
 }
 
-#microphone{
-    margin-left: 3%;
+#microphone-icon{
+    /* margin-left: 3%;
     margin-top: 14px;
-    font-size: 30px;
+    font-size: 30px; */
     
 }
 
+#microphone-button{
+
+    padding: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* border-style: none; */
+    border-radius: 100%;
+
+    margin-left: 1%;
+    margin-top: 5px;
+    font-size: 30px;
+
+}
+
+.btn{
+    background-color: transparent;
+    color: black;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+  }
+ /* a{
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    
+    border-radius: 100%;
+     background-color: white;
+     float: left;
+
+     margin-left: 2%;
+     margin-top: 5px;
+     font-size: 30px;
+    
+} */
+
+
+
+#footer-file-attachment-options{
+    position: absolute;
+    bottom: 70px;
+    left: 8%;
+    display: none;
+}
+
+.attachment-options{
+   
+    height: 48px;
+    width: 48px;
+    display: block;
+    margin-top: 10px;
+    background-color: transparent;
+    border-style: none;
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.5);
+    border-radius: 100%;
+
+    
+}
+
+.tooltiptext {
+    visibility: hidden;
+    white-space: nowrap ;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+  }
+
+.attachment-options:hover .tooltiptext{
+   
+    visibility: visible;
+}
+
+
+
+
+
+/*---------------------Anomation here----------------------------------*/
+@keyframes attachment-options{
+    0%{height:0px; width:0px;  }
+  100%{height:48px; width:48px;  }
+}
+.attachment-options{
+  animation-name: attachment-options;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+
+
+
+
+/*--------------------- Responsve here ---------------------*/
 @media only screen and (max-width: 620px){
-    #emojis{
+    #emoji-button{
         margin-left: 2%;
+        font-size: 20px;
+
+        /* padding: 4px;
+        padding-top: 2px;
+        padding-bottom: 2px; */
     }
 
-    #file-attachment{
+    #file-attachment-button{
         margin-left: 4%;
+        font-size: 20px;
+
+        /* padding: 4px;
+        padding-top: 2px;
+        padding-bottom: 2px; */
     }
 
     #footer input{
-        margin-left: 3%;
-        width: 70%;
+        margin-left: 4%;
+        width: 62%;
     }
 
-    #microphone{
+    #microphone-button{
         margin-left: 3%;
+        font-size: 20px;
+        padding: 8px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    #footer-file-attachment-options{
+        left: 14%;
     }
 }

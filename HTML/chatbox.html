@@ -25,17 +25,46 @@
      
     
 
+   
+    
+
   </div>
 
 
 
-  <div id="footer">
+  <div id="footer"> 
 
-    <i id="emojis" class="fa fa-smile-o" aria-hidden="true"></i>
+    <button id="emoji-button" class="btn">
+    <i id="emojis-icon" class="fa fa-smile-o" aria-hidden="true"></i>
+  </button>
+  
+   <!-- <a href="">
     <i id="file-attachment" class="fa fa-paperclip" aria-hidden="true"></i>
+   </a> -->
+   
+   <div id="footer-file-attachment-options" class="example1">
+    <!-- <span class="attachment-options">Content</span>
+    <span class="attachment-options">Document</span>
+    <span class="attachment-options">Camera</span>
+    <span class="attachment-options">Videose</span>
+    <span class="attachment-options">Photos</span> -->
+    <button class="attachment-options"><img src="../icon/SVG/Contact.svg" alt=""><span class="tooltiptext">Contact</span></button>
+    <button class="attachment-options"><img src="../icon/SVG/Document.svg" alt=""><span class="tooltiptext">Document</span></button>
+    <button class="attachment-options"><img src="../icon/SVG/Camera.svg" alt=""><span class="tooltiptext">Camera</span></button>
+    <button class="attachment-options"><img src="../icon/SVG/Sticker.svg" alt=""><span class="tooltiptext">Stickers</span></button>
+    <button class="attachment-options"><img src="../icon/SVG/Images.svg" alt=""><span class="tooltiptext">Picture & Videose</span></button>
+   </div>
+   <button id="file-attachment-button" class="btn active" onclick="File_Attachment()">
+    <i id="file-attachment-icon" class="fa fa-paperclip" aria-hidden="true"></i>
+   </button>
     <input type="text">
-    <i id="microphone" class="fa fa-microphone" aria-hidden="true"></i>
 
+    <button id="microphone-button" class="btn">
+    <i id="microphone-icon" class="fa fa-microphone" aria-hidden="true"></i>
+    </button>
   </div>
 </body>
 </html>
+
+
+<script src="../JavaScript/Chatbox.js"></script>
