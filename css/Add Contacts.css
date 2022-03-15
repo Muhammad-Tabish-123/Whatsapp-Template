@@ -11,7 +11,7 @@ html,body{
 
 #model{
     /* background-color: aquamarine; */
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.7); */
     position: fixed;
     top: 0%;
     left:  0%;
@@ -22,19 +22,40 @@ html,body{
 }
 
 #model-form{
-    background-color: #fff;
-    width: 30%;
+    /* background-color: #fff; */
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 40%;
     position: relative;
     top: 20%;
-    left: calc(50% - 15%);
+    /* top: 15%; */
+    left: calc(50% - 20%);
     padding: 15px;
     border-radius: 4px;
+    box-shadow: 0px 0px 20px;
   
 }
 
 form{
    
     text-align: center ;
+}
+
+#close-btn{
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    /* top: -15px;
+    right: -15px; */
+    text-align: center;
+
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+
 }
 
 

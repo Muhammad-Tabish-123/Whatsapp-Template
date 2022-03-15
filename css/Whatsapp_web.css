@@ -78,10 +78,10 @@ tr:nth-child(1) i{
     margin-top: 5px;
     font-size: 25px;
     color: gray;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 #Status{
-    margin-left: 40px;
+    margin-left: 30px;
 }
 #dots{
     margin-bottom: 20px;
@@ -89,8 +89,8 @@ tr:nth-child(1) i{
 }
 
 #Add-contacts{
-    margin-left: 100px;
-    color: rebeccapurple;
+    margin-left: 90px;
+    /* color: rebeccapurple; */
 } 
 
 tr:nth-child(1) td:nth-child(2){
@@ -108,7 +108,7 @@ tr:nth-child(1) td:nth-child(2){
     top: 0; */
     float: left;
     height: 100%;
-    width: 100%;
+    width: 98%;
     margin: 0px;
     padding: 0px;
     /* object-fit: fill; */
@@ -193,7 +193,7 @@ tr:nth-child(3) input{
     padding-left: 10%;
     border-radius: 10px ;
     color: gray;
-    font-size: 15xpx;
+    font-size: 15px;
     border-style: none;
     font-family: FontAwesome;
     outline: none;
