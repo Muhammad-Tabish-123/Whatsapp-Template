@@ -1,7 +1,7 @@
 function Iframe(){
     document.getElementById('Defaultimg').style.display="none";
     document.getElementById('Iframe').style.display="block";
-
+    
 
     
 }
@@ -32,6 +32,8 @@ function cls(){
     }
 
 }
+
+
 
 // document.querySelector('td:nth-child(2)').style.display="block";
 // document.querySelector('td:nth-child(2)').style.display="100%";

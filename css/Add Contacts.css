@@ -1,0 +1,40 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+*::after,*::before{
+    margin: 0%;
+    padding: 0%;
+}
+
+#model{
+    /* background-color: aquamarine; */
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0%;
+    left:  0%;
+    height:100% ;
+    width: 100%;
+    z-index: 100;
+    
+}
+
+#model-form{
+    background-color: #fff;
+    width: 30%;
+    position: relative;
+    top: 20%;
+    left: calc(50% - 15%);
+    padding: 15px;
+    border-radius: 4px;
+  
+}
+
+form{
+   
+    text-align: center ;
+}
+
+
